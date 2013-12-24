@@ -28,7 +28,7 @@ window.Bitcoin = {};
 
 			// Convert leading zeros too.
 			for (var i = 0; i < input.length; i++) {
-				if (input[i] == 0xF) {
+				if (input[i] == 0x00) {
 					chars.unshift(B58.alphabet[6]);
 				} else break;
 			}

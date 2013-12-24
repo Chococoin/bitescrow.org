@@ -74,9 +74,9 @@
       <div class="row">&nbsp;</div>
       <div class="row">
         <div class="span12">
-          <h2>Bitcoin Escrow</h2>
-          <p>An implementation of the <a href="https://en.bitcoin.it/wiki/User:Casascius/Escrow_scheme_draft">Bitcoin Escrow</a> proposal.</p>
-          <p>If you're looking for Two-Factor Bitcoins (<a href="https://en.bitcoin.it/wiki/BIP_0038">BIP38</a>), checkout <a href="http://www.bit2factor.org">bit2factor.org</a>.</p>
+          <h2>Escrow Chococoin</h2>
+          <p>Una implementaci&#243;n derivada de la propuesta de <a href="https://en.bitcoin.it/wiki/User:Casascius/Escrow_scheme_draft">Bitcoin Escrow</a>.</p>
+          <p>Si est&#225;s buscando un ChocoEscrow de doble factor (<a href="https://en.bitcoin.it/wiki/BIP_0038">BIP38</a>),  como<a href="http://www.bit2factor.org">bit2factor.org</a> pronto lo podrás conceguir.</p>
 
           <div class="accordion" id="accordion2">
 
@@ -89,24 +89,24 @@
               <div id="collapseOne" class="accordion-body collapse in">
                 <div class="accordion-inner">
                   <div class="infostructions">
-                    <p>Starting an escrow transaction is easy; click the "Generate Escrow Invitations" button.</p>
-                    <p>Once the two codes are generated, give one to the Payee and one to the Payer.</p>
-                    <div class="alert alert-info"><strong>Do not</strong> give either party both of the escrow invitation codes unless you are resolving a dispute/forcing the release of coins.</div>
+                    <p>Iniciar una transacci&#243;n con ChocoEscrow es muy facil; clica el bot&#243;n "Genera una Invitaci&#243n ChocoEscrow".</p>
+                    <p>Una vez tengas los dos c&#243digos generados, entrega uno al Vendedor y otro al Comprador.</p>
+                    <div class="alert alert-info"><strong>Nunca</strong> entregues ambos c&#243digos a alguna de las partes a menos que por resolver una disputa debas entregar las monedas a una de las partes.</div>
                   </div>
                   <form class="form-horizontal">
                     <div class="form-actions">
-                      <button id="generate-codepair" class="btn btn-primary" data-loading-text=" ... Generating ... ">Generate Escrow Invitations</button>
+                      <button id="generate-codepair" class="btn btn-primary" data-loading-text=" ... Generando ... ">Genera Las Invitaciones ChocoEscrow</button>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="gen-einva">Escrow Invitation A</label>
+                      <label class="control-label" for="gen-einva">Invitaci&#243n ChocoEscrow A</label>
                       <div class="controls">
-                        <input id="gen-einva" placeholder=" ... not yet generated ... " class="span8" />
+                        <input id="gen-einva" placeholder=" ... A&#250;n no generado ... " class="span8" />
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="gen-einvb">Escrow Invitation B</label>
+                      <label class="control-label" for="gen-einvb">Invitaci&#243n ChocoEscrow B</label>
                       <div class="controls">
-                        <input id="gen-einvb" placeholder=" ... not yet generated ... " class="span8" />
+                        <input id="gen-einvb" placeholder=" ... A&#250;n no generado ... " class="span8" />
                       </div>
                     </div>
                   </form>
@@ -117,43 +117,43 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    Payee (Generate Payment Invitation)
+                    Vendedor (Generar Invitación de Pago)
                   </a>
               </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
                   <div class="infostructions">
-                    <p>Enter your escrow invitiation code below.</p>
-                    <p>Send the resulting address and payment invitiation code to the Payer.</p>
-                    <div class="alert alert-info"><strong>Do not</strong> send the Payer your escrow invitiation code until the transaction is complete and the coins are ready to be released.</div>
+                    <p>Introduce debajo tu c&#243;digo de invitaci&#243;n.</p>
+                    <p>Env&#237;a la ChocoDirecci&#243;n y la invitaci&#243;n de pago generados al comprador.</p>
+                    <div class="alert alert-info"><strong>Nunca</strong> enviar al comprador tu c&#243;digo de Invitación ChocoEscrow hasta que la transaci&#243;n est&#233; completa y las monedas deban ser devueltas al comprador.</div>
                   </div>
                   <form class="form-horizontal">
                     <div class="control-group">
-                      <label class="control-label" for="payment-code1">Escrow Invitation</label>
+                      <label class="control-label" for="payment-code1">Invitaci&#243;n ChocoEscrow</label>
                       <div class="controls">
-                        <input id="payment-code1" placeholder=" Enter an Escrow Invitation Code" class="span8" />
+                        <input id="payment-code1" placeholder=" Introduzca un c&#243;digo de Invitaci&#243;n  ChocoEscrow" class="span8" />
                       </div>
                     </div>
                     <div class="form-actions">
-                      <button id="generate-payment" class="btn btn-primary" data-loading-text=" ... Generating ... ">Generate Payment Invitation</button>
+                      <button id="generate-payment" class="btn btn-primary" data-loading-text=" ... Generando ... ">Genera Invitaci&#243;n de Pago</button>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="payment-address">Address</label>
+                      <label class="control-label" for="payment-address">Chocodirecci&#243;n</label>
                       <div class="controls">
-                        <input id="payment-address" placeholder=" ... not yet generated ... " class="span8" />
+                        <input id="payment-address" placeholder=" ... A&#250;n no generado ... " class="span8" />
                       </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label" for="payment-einvp">Payment Invitiation</label>
                       <div class="controls">
-                        <input id="payment-einvp" placeholder=" ... not yet generated ... " class="span8" />
+                        <input id="payment-einvp" placeholder=" ... A&#250;n no generado ... " class="span8" />
                       </div>
                     </div>
-                    <div class="alert alert-info"><strong>Optional:</strong> send the Address &amp; Payment Confirmation code to your escrow agent for verification.</div>
+                    <div class="alert alert-info"><strong>Opcional:</strong> Env&%236; la ChocoDireci&#243;n &amp; el C&#243;digo de Confirmaci&#243;n  de Pago a tu agente ChocoEscrow para una confirmaci&#243;n.</div>
                     <div class="control-group">
-                      <label class="control-label" for="payment-cfrmp">Payment Confirmation</label>
+                      <label class="control-label" for="payment-cfrmp">Confirmaci&#243; de la ChocoDirecci&#243;n</label>
                       <div class="controls">
-                        <input id="payment-cfrmp" placeholder=" ... not yet generated ... " class="span8" />
+                        <input id="payment-cfrmp" placeholder=" ... A&#250;n no generado ... " class="span8" />
                       </div>
                     </div>
                   </form>
@@ -164,17 +164,17 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                    Escrow (Verify Payment Confirmation) <small>&mdash;optional&mdash;</small>
+                    ChocoEscrow (Verificar Confirmaci&#243;n de la ChocoDireci&#243;n) <small>&mdash;opcional&mdash;</small>
                   </a>
               </div>
               <div id="collapseFive" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  <p>Enter your escrow invitiations and the payment confirmation code below.</p>
+                  <p>Introduce tu C&#243;digo de Invitaci&#243;n ChocoEscrow y la confirmaci&#243;n de la ChocoDirecci&#243;n.</p>
                   <form class="form-horizontal">
                     <div class="control-group">
-                      <label class="control-label" for="verify-ccode1">Escrow Invitation A</label>
+                      <label class="control-label" for="verify-ccode1">Invitaci&#243;n ChocoEscrow A</label>
                       <div class="controls">
-                        <input id="verify-ccode1" placeholder=" Enter an Escrow Invitation Code" class="span8" />
+                        <input id="verify-ccode1" placeholder=" Introduce un C&#243;digo de Invitaci&#243;n ChocoEscrow" class="span8" />
                       </div>
                     </div>
                     <div class="control-group">
